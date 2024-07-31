@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footleft, .footright {
+    flex: 1;
+}
+
+.fl1, .fr1 {
+    background-color: rgb(28, 28, 28);
+    color: white;
+    padding: 40px 100px;
+    height: 200px;
+}
+
+.cont {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.cont2l, .cont2r {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 30px;
+}
+
+.cont2r {
+    padding-left: 400px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+a.realcont:hover {
+    color: rgb(73, 73, 208);
+    cursor: pointer;
+}
+
+.realcontsocio {
+    display: inline-block;
+    transition: transform 0.3s;
+    padding-left: 20px;
+}
+
+a.realcontsocio:hover {
+    transform: scale(2);
+}
+
+@media (max-width: 768px) {
+    .footleft, .footright {
+        flex: 100%;
+        margin: 0;
+    }
+    .fl1, .fr1 {
+        padding: 20px;
+    }
+    .cont2r {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+.Navi {
+    padding: 25px 35px;
+    border-bottom: .01px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    transition: all 0.7s ease;
+    z-index: 1000;
+    top: 0;
+}
+
+.Navlogo img {
+    height: 49px;
+    width: 160px;
+    transition: all 0.3s ease;
+}
+
+.Navsocio {
+    padding-top: 15px;
+    padding-right: 80px;
+}
+
+.shrink {
+    padding: 10px 35px;
+}
+
+.shrink .Navlogo img {
+    height: 40px;
+    width: 130px;
+}
+
+.hidden {
+    top: -100px;
+}
+
+.content {
+    padding-top: 100px;
+}
+
+/* Responsive grid and image adjustments */
+.grid-container {
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    gap: 0px;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-item:nth-child(1),
+    .grid-item:nth-child(2) {
+        grid-column: span 2;
+        background-color: rgb(234, 234, 234);
+    }
+}
+
+@media (max-width: 599px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: left;
+}
+
+#content1, #content2, #content3 {
+    padding: 20px 10px;
+}
+
+#gitleft1 {
+    padding-top: 55px;
+    padding-bottom: 100px;
+}
+
+#gitleft2 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#gitleft3 {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.full-width-bg1 {
+    background-color: rgb(234, 234, 234);
+    padding: 20px 0;
+    padding-bottom: 20px;
+}
+
+.afterha {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 100px;
+}
+
+.teampic {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 40px;
+}
+
+.ppic {
+    width: 100%;
+    height: auto;
+}
+
+.but {
+    width: 70%;
+    height: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: white;
+    background-color: rgb(56, 56, 240);
+    border: none;
+    cursor: pointer;
+}
+
+.but:hover {
+    color: rgb(56, 56, 240);
+    background-color: white;
+    border: 2px solid rgb(56, 56, 240);
+}
+
+.fourcont {
+    width: 300px;
+    height: 160px;
+    padding-left: 15px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.fourcont > p {
+    padding-top: 10px;
+    font-size: medium;
+}
+
+.responsive-image {
+    width: 80%;
+    height: auto;
+}
